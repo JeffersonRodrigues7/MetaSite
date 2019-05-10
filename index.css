@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    display: block; 
+}
+
+a:link{
+    color: red;
+}
+
+a:visited{
+    color: white;
+    background-color: #2455A6;
+}
+
+a:hover {
+    color: red;
+    background-color: white;
+}
+
+a:active {
+    color: red;
+    background-color: white;
+}
+
+header {
+    grid-area: header;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: cursive;
+    font-style: italic;
+    justify-content: space-between;
+}
+
+header h1{
+    margin-left: 30px;
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+}
+
+header li{
+    margin-right: 30px;
+    align-items: center; 
+}
+
+aside {
+    background-color: #2455A6;
+    color: white;
+    font-family: cursive;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+aside li {
+    margin-top: 10px;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+    background-color: white;
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 70px 900px 50px;
+    grid-template-areas:
+        'header header'
+        'aside main'
+        'footer footer'
+}
+
+.tarefas {
+    width: 1fr;
+    display: flexbox;
+    flex-wrap: wrap;
+    background-color: #0E0B16;
+}
+
+.tarefas div{
+    display: inline-block;
+    width: 29.5%;
+    height: 240px;
+    padding: 5px;
+    margin: 20px 0px 0px 20px;
+    border: solid 3px #000;
+    border-radius: 10px;
+    border-color: #A239CA;
+    background-color:#A239CA;
+}
+
+.criadorTarefa {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.criadorTarefa p{
+    padding: 2px 0px 2px 0px;
+}
+
+.criadorTarefa h4{
+    display: inline;
+}
+
+.criadorTarefa #titulo, #options, textarea{
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+}
+
+.criadorTarefa #options {
+    margin-top: 5px;
+}
+
+.criadorTarefa button{  
+    margin-left: 40%;
+    width: 50px;
+    background-color: #4717F6;
+    color: #E7DFDD;
+    border-radius: 8px;
+}
+
+.criadorTarefa button:hover {
+    background-color: #E7DFDD;
+    color: #4717F6;
+  }
+
+ 
+

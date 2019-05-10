@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <title>Metas</title>
+
+    <head>
+
+        <link rel="stylesheet" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="index.js"> </script>
+
+    </head>
+
+    <body>
+        
+        <header>
+            <h1>Metas online</h1>
+
+            <nav>
+                <ul id="navbar">
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside>
+            <nav>
+                <ul id="plan">
+                    <li><a href linkConteudo="diario.html" destino=".conteudo">Diárias</a></li><!--Pega o que está em diario.html e manda para conteudo-->
+                    <li><a href linkConteudo="semanal.html" destino=".conteudo">Semanais</a></li>
+                    <li><a href linkConteudo="mensal.html" destino=".conteudo">Mensais</a></li>
+                    <li><a href linkConteudo="anual.html" destino=".conteudo">Anuais</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="tarefas" >
+            
+            <div class="conteudo"></div>   
+            
+            <div class="criadorTarefa"> 
+
+                <form action="/insere" method="post">
+                    <p><h4> Título </h4>   <input type="text" name="titulo" id="titulo" size="40" maxlength="30" placeholder="Digite o título da tarefa"/> </p> 
+                    
+                    <p><h4>Descrição</h4> <textarea name="descricao" id="descricao" cols="50" rows="3" placeholder="Deixe uma breve descrição sobre sua tarefa"></textarea> </p> 
+                    
+                    <p> 
+                        <h4>Grau de importância(quanto maior o número, maior a importância)</h4>
+                        <input type="radio" name="urgencia" value="2"> Muito
+                        <input type="radio" name="urgencia" value="1" checked> Médio
+                        <input type="radio" name="urgencia" value="0"> Pouco
+                    </p>
+
+                    <p> 
+                        <h4>Como irá realizar essa tarefa</h4>
+                        <select name="tipoTarefa" id="select"> 
+                            <option value="2"> Número vezes </option> 
+                            <option value="1"> Hora </option> 
+                            <option value="0"> Minuto </option> 
+                        </select>
+                        <input type="text" name="numeroRepeticoes" id="options" size="40" maxlength="5" placeholder="Em quantas vezes você pretende fazer?"/> </p> 
+                    </p>
+
+                    <p><button type="submit"> Criar </button></p>
+                </form>
+            </div>
+ 
+        </div>
+
+        <footer></footer>
+
+        <script src="navegarAjax.js"> </script>
+
+    </body>
+
+    
+    
+</html>
